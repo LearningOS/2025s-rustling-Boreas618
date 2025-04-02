@@ -15,8 +15,8 @@ mod tests {
     use super::*;
 
     #[test]
+    #[cfg(feature = "pass")]
     fn test_success() {
-        #[cfg(feature = "pass")]
         return;
 
         panic!("no cfg set");
